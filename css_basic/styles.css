@@ -1,0 +1,26 @@
+/* Vertical flex container*/
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+/*horizontal flex container*/
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+}
+
+/*article takes 2/3 of space*/
+article {
+    flex: 2;
+    overflow: auto;
+}
+
+/*Aside takes 2/3 of space*/
+aside {
+    flex: 1;
+    overflow-y: auto;
+}
