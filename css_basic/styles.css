@@ -24,3 +24,40 @@ aside {
     flex: 1;
     overflow-y: auto;
 }
+
+header {
+    background-color: #15ceb8;
+    color: lch(51.39% 99.78 39.32);
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+main {
+    background-color: #d3cccc;
+}
+
+article {
+    padding: 20px;
+    background-color: rgb(235, 171, 171);
+    border-right: #f5f5f5;
+}
+
+aside {
+    padding: 20px;
+    background-color: #8fea8f;
+}
+
+article h1 {
+    color: #1c2a3b;
+}
+
+article p {
+    line-height: 1.6;
+    color: #27264c;
+}
