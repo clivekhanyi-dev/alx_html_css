@@ -369,3 +369,52 @@ body {
     line-height: 1.7;
     color: #555;
 }
+
+
+/* =========================
+          FOOTER
+   ========================= */
+
+.footer {
+    background-color: #071629; /* same as membership section background */
+    color: #fff;
+    padding: 60px 0;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+/* Top area: logo + social icons horizontally aligned */
+.footer-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+/* Logo */
+.footer-top img {
+    width: 150px; /* matches Figma size */
+}
+
+/* Social icons row */
+.socials {
+    display: flex;
+    gap: 20px;
+}
+
+.socials i {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.socials i:hover {
+    opacity: 0.8;
+}
+
+/* Copyright */
+.footer p {
+    font-size: 14px;
+    opacity: 0.6;
+}
