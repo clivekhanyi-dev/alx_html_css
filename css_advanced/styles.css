@@ -177,3 +177,88 @@ body {
     opacity: 0.9;
     margin: 5px 0 0;
 }
+
+/* =========================
+     POPULAR VIDEOS SECTION
+   ========================= */
+
+.popular {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.popular h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+/* Grid layout for 4 cards */
+.tutorial-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+/* Each video card */
+.tutorial-card {
+    text-align: left;
+}
+
+/* Video thumbnail */
+.tutorial-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Title */
+.tutorial-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* Description */
+.tutorial-card > p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Author row */
+.tutorial-author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+/* Author image */
+.tutorial-author img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Author name */
+.tutorial-author h4 {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* Star rating */
+.rating {
+    display: flex;
+    gap: 5px;
+    color: #C271FF;  /* purple stars */
+    margin-bottom: 10px;
+}
+
+/* Duration */
+.duration {
+    font-size: 14px;
+    font-weight: 700;
+    color: #C271FF;
+}
