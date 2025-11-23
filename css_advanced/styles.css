@@ -262,3 +262,67 @@ body {
     font-weight: 700;
     color: #C271FF;
 }
+
+/* =========================
+     MEMBERSHIP SECTION
+   ========================= */
+
+.membership {
+    background-color: #071629; /* dark navy from Figma */
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.membership h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+/* Grid of 4 cards */
+.membership-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+/* Individual card */
+.member-card {
+    text-align: center;
+    padding: 0 20px;
+}
+
+.member-card img {
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+.member-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.member-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    opacity: 0.8;
+}
+
+/* Purple Figma button reused from hero section */
+.membership .btn-primary {
+    background-color: #C271FF;
+    padding: 15px 35px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.membership .btn-primary:hover {
+    opacity: 0.9;
+}
