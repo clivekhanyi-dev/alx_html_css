@@ -1,0 +1,131 @@
+/* ===========
+   GLOBAL BASE
+   =========== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans Pro", sans-serif;
+    background-color: #fff;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ===========
+     HEADER
+   =========== */
+.header {
+    padding: 20px 0;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav img.logo {
+    width: 150px; /* adjust if needed according to Figma */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    color: #fff;
+}
+
+/* ===========
+     HERO
+   =========== */
+.hero {
+    background-image: url("images/background.png"); /* replace name based on your Figma image */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 150px 0 100px;
+    text-align: center;
+}
+
+/* Get schooled title */
+.hero-text h1 {
+    font-size: 100px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* SMILES GRIN LAUGH */
+.hero-tags {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+/* Button */
+.btn-primary {
+    background-color: #C271FF;
+    color: #fff;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 80px;
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+}
+
+/* ===========
+   PROS SECTION
+   =========== */
+.pros {
+    margin-top: 60px;
+}
+
+.pros h2 {
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.pros-grid {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.pro-card {
+    text-align: center;
+}
+
+.pro-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.pro-card h3 {
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.pro-card p {
+    font-style: italic;
+    color: #C271FF;
+}
