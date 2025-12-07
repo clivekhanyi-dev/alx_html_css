@@ -1,0 +1,302 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root {
+  --primary-bg: #000;             /* Page background */
+  --primary-text: #fff;           /* Default text color */
+  --accent-color: #e6005c;        /* Accent color */
+  --font-main: Arial, sans-serif; /* Default font */
+}
+
+/* BASIC PAGE SETTINGS */
+body {
+  font-family: var(--font-main);
+  background: var(--primary-bg);
+  color: var(--primary-text);
+}
+
+/* HERO SECTION */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("images/headphones_hero_1.jpg") center/cover no-repeat;
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+}
+
+/* NAVIGATION */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px 60px;
+}
+
+.logo {
+  height: 60px;
+  width: auto;
+}
+
+nav a {
+  color: var(--primary-text);
+  margin-left: 25px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--accent-color);
+  opacity: 0.7;
+}
+
+/* HERO CONTENT */
+.hero-content {
+  max-width: 500px;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* BUTTON */
+.hero-content button {
+  background: var(--accent-color);
+  border: none;
+  padding: 14px 40px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--primary-text);
+  transition: 0.3s ease;
+}
+
+.hero-content button:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
+/* WHAT WE DO SECTION */
+.what-we-do {
+  text-align: center;
+  padding: 80px 20px;
+  background: #fff;
+  color: #000;
+}
+
+.what-we-do h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.what-we-do p {
+  max-width: 600px;
+  margin: 0 auto 60px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* SERVICES */
+.services {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.service {
+  max-width: 280px;
+  text-align: center;
+}
+
+.service span {
+  font-size: 60px;
+  color: var(--accent-color);
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.service h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.service p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* OUR RESULTS SECTION */
+.our-results {
+  text-align: center;
+  padding: 80px 20px;
+  background: var(--primary-bg);
+  color: var(--primary-text);
+}
+
+.our-results h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.our-results p {
+  max-width: 600px;
+  margin: 0 auto 60px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* RESULTS CONTAINER */
+.results-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+/* RESULT BLOCK */
+.result {
+  width: 200px;
+  text-align: center;
+}
+
+/* PURE CSS PENTAGON */
+.pentagon {
+  width: 110px;
+  height: 70px;
+  margin: 0 auto;
+  background: var(--accent-color);
+  clip-path: polygon(50% 0%, 95% 35%, 78% 100%, 22% 100%, 5% 35%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* TEXT INSIDE PENTAGON */
+.percent {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--primary-text);
+}
+
+/* RESULT LABEL */
+.result h3 {
+  margin-top: 15px;
+  font-size: 1rem;
+  color: var(--primary-text);
+}
+
+/* CONTACT SECTION */
+.contact-us {
+  text-align: center;
+  padding: 80px 20px;
+  background: #fff;
+  color: #000;
+}
+
+.contact-us h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contact-us p {
+  max-width: 600px;
+  margin: 0 auto 50px;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 15px;
+  border: 2px solid var(--accent-color);
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+}
+
+.contact-form button {
+  background: var(--accent-color);
+  border: none;
+  padding: 14px 40px;
+  border-radius: 30px;
+  color: var(--primary-text);
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 60px 20px;
+  background: var(--primary-bg);
+  color: var(--primary-text);
+}
+
+.footer-logo {
+  height: 60px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.social-icons span {
+  font-size: 35px;
+  margin: 0 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.social-icons span:hover {
+  color: var(--accent-color);
+}
+
+.footer p {
+  opacity: 0.7;
+  font-size: 0.9rem;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 600px) {
+  h1 { font-size: 2rem; }
+  .footer-logo { height: 45px; }
+  .social-icons span { font-size: 28px; margin: 0 10px; }
+}
