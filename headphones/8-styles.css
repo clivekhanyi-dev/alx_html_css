@@ -1,0 +1,236 @@
+/* RESET */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* VARIABLES */
+:root {
+  --primary-bg: #000;
+  --primary-text: #fff;
+  --accent-color: #e6005c;
+  --font-main: Arial, sans-serif;
+}
+
+/* BASIC PAGE */
+body {
+  font-family: var(--font-main);
+  background: var(--primary-bg);
+  color: var(--primary-text);
+}
+
+/* HERO SECTION */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("images/headphones_hero_1.jpg") center/cover no-repeat;
+  min-height: 100vh;
+  text-align: center;
+}
+
+/* NAVIGATION */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 25px 60px;
+}
+
+.logo { height: 60px; }
+
+/* NAV LINKS */
+.nav-links a {
+  margin-left: 25px;
+  color: var(--primary-text);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover { color: var(--accent-color); }
+
+/* HAMBURGER (HIDDEN ON DESKTOP) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 30px;
+  height: 3px;
+  background: var(--primary-text);
+  transition: 0.3s;
+}
+
+/* HAMBURGER ANIMATION */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 6px);
+}
+
+.hamburger.active span:nth-child(2) { opacity: 0; }
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* MOBILE NAV */
+@media (max-width: 480px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 85px;
+    right: 0;
+    width: 100%;
+    background: var(--primary-bg);
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px 0;
+    text-align: center;
+  }
+
+  .nav-links.nav-open { display: flex; }
+
+  .hamburger { display: flex; }
+}
+
+/* HERO CONTENT */
+.hero-content h1 { font-size: 3rem; margin-bottom: 20px; }
+.hero-content p { font-size: 1.3rem; margin-bottom: 20px; }
+.hero-content button {
+  background: var(--accent-color);
+  color: var(--primary-text);
+  border: none;
+  padding: 14px 40px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.hero-content button:hover { opacity: 0.8; transform: scale(1.05); }
+
+/* WHAT WE DO */
+.what-we-do {
+  text-align: center;
+  background: #fff;
+  color: #000;
+  padding: 80px 20px;
+}
+
+.services { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; }
+
+.service { 
+    transition: 0.4s;
+ }
+.service:hover {
+     transform: scale(1.1); 
+     opacity: 0.9; 
+    }
+
+/* RESULTS */
+.our-results { text-align: center;
+     padding: 80px 20px;
+     }
+.results-container { display: flex;
+     justify-content: center; 
+     gap: 50px; 
+     flex-wrap: wrap;
+     }
+
+.result {
+     text-align: center;
+     transition: 0.4s;
+     }
+.result:hover { 
+    transform: scale(1.05) rotate(3deg); 
+}
+
+.pentagon {
+  width: 110px;
+  height: 70px;
+  margin: 0 auto;
+  background: var(--accent-color);
+  clip-path: polygon(50% 0%, 95% 35%, 78% 100%, 22% 100%, 5% 35%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.percent {
+    font-size: 1.6rem;
+    font-weight: bold;
+     }
+
+/* CONTACT */
+.contact-us {
+  background: #fff;
+  color: #000;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+  gap: 20px;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 15px;
+  border: 2px solid var(--accent-color);
+  border-radius: 8px;
+}
+
+/* FOOTER */
+.footer {
+  background: var(--primary-bg);
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+}
+
+.social-icons span {
+  font-size: 35px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.social-icons span:hover { 
+    color: var(--accent-color);
+ }
+
+
+ /* NEON GLOW BUTTON */
+.contact-form button {
+  background: var(--accent-color);
+  color: var(--primary-text);
+  border: none;
+  padding: 14px 40px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 0 8px var(--accent-color),
+              0 0 20px var(--accent-color);
+}
+
+/* HOVER EFFECT */
+.contact-form button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 12px var(--accent-color),
+              0 0 25px var(--accent-color),
+              0 0 40px var(--accent-color);
+}
+
+/* PRESSED EFFECT */
+.contact-form button:active {
+  transform: scale(0.97);
+  box-shadow: 0 0 5px var(--accent-color);
+}
