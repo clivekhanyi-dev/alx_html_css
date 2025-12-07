@@ -1,0 +1,350 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root {
+    --primary-bg: #000;          /* Page background */
+    --primary-text: #fff;        /* Default text color */
+    --accent-color: #e6005c;     /* Icon & button color */
+    --font-main: Arial, sans-serif;
+}
+
+/* BASIC PAGE SETTINGS */
+body {
+    font-family: var(--font-main);
+    background: var(--primary-bg);
+    color: var(--primary-text);
+}
+
+/* HERO SECTION */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;
+    background: url("images/headphones_hero_1.jpg") center/cover no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* NAVIGATION */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 60px;
+}
+
+.logo {
+    height: 60px;
+    width: auto;
+}
+
+nav a {
+    color: var(--primary-text);
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    opacity: 0.7;
+    color: var(--accent-color);
+}
+
+/* HERO CONTENT */
+.hero-content {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    align-items: center;       
+    flex: 1;                  
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* BUTTON */
+.hero-content button {
+    background: var(--accent-color);
+    border: none;
+    padding: 14px 40px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    color: var(--primary-text);
+    transition: 0.3s ease;
+    margin: 0 auto;
+    display: block;
+}
+
+.hero-content button:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+/* WHAT WE DO SECTION */
+.what-we-do {
+    text-align: center;
+    padding: 80px 20px;
+    background: #fff;
+    color: #000;
+}
+
+.what-we-do h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.what-we-do p {
+    max-width: 600px;
+    margin: 0 auto 60px;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+/* SERVICES CONTAINER */
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* SINGLE SERVICE CARD */
+.service {
+    max-width: 280px;
+    text-align: center;
+}
+
+/* ICON STYLE */
+.service span {
+    font-size: 60px;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.service h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.service p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* OUR RESULTS SECTION */
+
+.our-results {
+  text-align: center;
+  background: var(--primary-bg);
+  color: var(--primary-text);
+  padding: 80px 20px;
+}
+
+.our-results h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.our-results p {
+  max-width: 600px;
+  margin: 0 auto 60px;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+/* RESULTS CONTAINER */
+.results-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap; /* makes it responsive */
+  margin-top: 40px;
+}
+
+/* INDIVIDUAL RESULT BLOCK */
+.result {
+  width: 200px;
+  text-align: center;
+}
+
+/* PENTAGON WRAPPER - BASE FOR OVERLAY */
+.pentagon {
+  position: relative;
+  width: 150px;
+  margin: 0 auto;
+}
+
+/* IMAGE STYLING */
+.pentagon img {
+  width: 150px;
+  display: block;
+}
+
+/* PERCENTAGE TEXT INSIDE THE PENTAGON */
+.pentagon .percent {
+  position: absolute;
+  top: 50%;                 /* middle vertically */
+  left: 50%;                /* middle horizontally */
+  transform: translate(-50%, -50%); /* perfect center */
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary-text);
+  z-index: 2;
+  pointer-events: none;     /* prevents accidental highlight */
+}
+
+/* RESULT DESCRIPTION */
+.result h3 {
+  font-size: 1rem;
+  margin-top: 15px;
+  color: var(--primary-text);
+}
+
+/* CONTACT US SECTION */
+
+.contact-us {
+  text-align: center;
+  padding: 80px 20px;
+  background: #fff;
+  color: #000;
+}
+
+.contact-us h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contact-us p {
+  max-width: 600px;
+  margin: 0 auto 50px;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/* FORM STYLES */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 15px;
+  border: 2px solid var(--accent-color);
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contact-form button {
+  background: var(--accent-color);
+  border: none;
+  padding: 14px 40px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--primary-text);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Tablets */
+@media (max-width: 768px) {  
+  body { padding: 0 10px; }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  h1 { font-size: 2rem; }
+  nav a { font-size: 0.9rem; }
+  button { width: 100%; }
+}
+
+/* FOOTER SECTION */
+
+.footer {
+  background: var(--primary-bg);
+  color: var(--primary-text);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+/* LOGO */
+.footer-logo {
+  height: 60px;
+}
+
+/* SOCIAL ICONS */
+.social-icons span {
+  font-size: 35px;
+  margin: 0 15px;
+  cursor: pointer;
+  color: var(--primary-text);
+  transition: 0.3s ease;
+}
+
+.social-icons span:hover {
+  color: var(--accent-color);
+}
+
+/* COPYRIGHT */
+.footer p {
+  opacity: 0.7;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  .social-icons span {
+    font-size: 28px;
+    margin: 0 10px;
+  }
+
+  .footer-logo {
+    height: 45px;
+  }
+}
